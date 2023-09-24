@@ -2,6 +2,11 @@ COMO ENTRAR NO SQL PELO PROMPT
 
 mysql -h localhost -u root-p
 
+
+Comando para criar um banco de dados (DATABASE)
+
+CREATE DATABASE teste;
+
 comando para mostrar os bancos de dados
 
 SHOW DATABASES;
