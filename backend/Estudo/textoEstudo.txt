@@ -1,0 +1,13 @@
+Anotações do express:
+
+de incio para inicar o framework usasse esse comando
+
+const express = require("express");
+    primeiro se cria uma constante para fazer o requiremento do express
+
+const app = express();  
+    depois usasse outra constante para puxar a função do express
+
+
+A ultilidade geral do Express é criar e gerenciar rotas, usando parametros, 
+e com esse parametros conseguimos linkar o html
