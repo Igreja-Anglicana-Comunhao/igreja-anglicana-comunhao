@@ -1,9 +1,10 @@
-const Sequelize = require('sequelize');
+/*const Sequelize = require('sequelize');
 const sequelize = new Sequelize('teste', 'root', '525715', {
   host: 'localhost',
   dialect: 'mysql'
 });
 
+*/
 
 /*
 FUNÇÃO PARA SABER SE O SEQUELIZE ESTA FUNCIOANDO 
