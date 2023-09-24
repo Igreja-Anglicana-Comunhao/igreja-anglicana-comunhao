@@ -43,3 +43,9 @@ SELECT * FROM usuarios WHERE idade < 21;
 DELETE FROM usuarios (apaga toda a tabela, todos os registro)
 
 DELETE FROM usuarios WHERE nome = robert
+
+
+Atualizar tabela:
+(podese passar mais de um parametro de atualização)
+ 
+UPDATE usuarios SET nome = "Arley" WHERE nome = "abe";
