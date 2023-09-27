@@ -1,11 +1,10 @@
 const express = require("express");
 const app = express();
-const handlebars = require("express-handlebars");
 const Sequelize = require('sequelize');
 
-// Configuração do Handlebars
-    app.engine('handlebars', handlebars({ defaultLayout: 'main' }));
-    app.set('view engine', 'handlebars');
+
+    app.set('view engine', 'ejs')
+
 
     // Configuração da conexão com o banco de dados
     const sequelize = new Sequelize('teste', 'root', '525715', {
@@ -25,7 +24,12 @@ const Sequelize = require('sequelize');
 
     // Rotas
     app.get('/cad', function (req, res) {
-        res.send('Rota de cadastro');
+        res.render('formulario');
+    });
+
+    //rotas ejs
+    app.get('/inicio',function(req, res){
+        res.render('inicio')
     });
 
 // Inicialização do servidor
