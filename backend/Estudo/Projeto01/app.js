@@ -1,26 +1,29 @@
 const express = require('express');
 const bodyParser = require('body-parser'); // Importe o módulo 'body-parser'.
-const Post = require ('./models/Post')
+const Post = require ('./models/Post') //importar o banco de dados e criar os atributos do banco de dados.
 
-const app = express();
+const app = express(); //atribuir a função do express a uma variavel
 
 // Templante engine
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs'); //template de view engine com a ferramente do ejs
 
 // Template bodyParse
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false })); 
+app.use(bodyParser.json()); //transformar o texto do body-parse em um arquivo json
 
 // Rotas
 
-app.get('/', function(req,res){
+app.get('/', function(req,res){ //rota para a função home, que é um arquivo ejs
     res.render('home')
 })
 
 // Rota para a página do usuário
 app.get('/cad', function (req, res) {
-    res.render('formulario');
+    res.render('formulario'); //vai redenrizar o formulario
 });
+
+
+//Teste de post, para ver se ta dando m retorno
 
 /* Rota do tipo POST recebida pelo formulário
 app.post('/add', function (req, res) {
@@ -35,20 +38,27 @@ app.post('/add', function (req, res) {
 
 //Rota post para os dados irem para o banco
 app.post('/add', function(req,res){
+    //criar uma tabela com Post, que sera atribuida ao banco de dados
     Post.create({
+
         titulo: req.body.titulo,
         conteudo: req.body.conteudo
     })
     //função para ver se o post deu certo
+    //caso a função de certo, o usuario vai ser redirecionado para outra aba
     .then(function(){
         res.redirect('/')
-    }).catch(function(erro){
+    })
+
+    //caso der certo, vai aparecer uma mensagem informando o seu erro 
+    .catch(function(erro){
         res.send("Houve um erro " + erro)
     })
 })
 
 // Inicialização do servidor
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 8081; ///porta que o servidor local vai ser aberto
 app.listen(PORT, function () {
+    //Retorno no console, exibindo a URL que o localhost esta hospedado
     console.log(`O servidor está rodando na URL http://localhost:${PORT}`);
 });
