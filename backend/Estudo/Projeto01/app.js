@@ -4,6 +4,8 @@ const Post = require ('./models/Post') //importar o banco de dados e criar os at
 
 const app = express(); //atribuir a função do express a uma variavel
 
+//TEMPLATE NECESSARIO PARA O SISTEMA PRINCIPAL
+
 // Templante engine
 app.set('view engine', 'ejs'); //template de view engine com a ferramente do ejs
 
@@ -13,14 +15,30 @@ app.use(bodyParser.json()); //transformar o texto do body-parse em um arquivo js
 
 // Rotas
 
+
+
+
+//Rota get inrelevante para o sistema pricipal
 app.get('/', function(req,res){ //rota para a função home, que é um arquivo ejs
-    res.render('home')
+    Post.findAll()
+        .then(function(post){
+            console.log(post)
+            res.render('home', {post: post})
+        })
 })
+
+
+
+
 
 // Rota para a página do usuário
 app.get('/cad', function (req, res) {
     res.render('formulario'); //vai redenrizar o formulario
 });
+
+
+
+
 
 
 //Teste de post, para ver se ta dando m retorno
@@ -36,6 +54,10 @@ app.post('/add', function (req, res) {
 });
 */
 
+
+
+
+//Rota necessaria 
 //Rota post para os dados irem para o banco
 app.post('/add', function(req,res){
     //criar uma tabela com Post, que sera atribuida ao banco de dados
@@ -56,8 +78,14 @@ app.post('/add', function(req,res){
     })
 })
 
+
+
+
+
+
+
 // Inicialização do servidor
-const PORT = process.env.PORT || 8081; ///porta que o servidor local vai ser aberto
+const PORT = process.env.PORT || 8082; ///porta que o servidor local vai ser aberto
 app.listen(PORT, function () {
     //Retorno no console, exibindo a URL que o localhost esta hospedado
     console.log(`O servidor está rodando na URL http://localhost:${PORT}`);
