@@ -1,6 +1,6 @@
 const db = require('./db');
 
-const Doar = db.sequelize.define('Doador', {
+const Doar = db.sequelize.define('doador', {
     Nome: {
         type: db.Sequelize.STRING // Correção aqui
     },
@@ -8,7 +8,7 @@ const Doar = db.sequelize.define('Doador', {
         type: db.Sequelize.STRING
     }, 
     email: {
-        type: db.Sequelize.TEXT
+        type: db.Sequelize.STRING
     }
 });
 

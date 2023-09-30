@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 // Definindo onde está o database
-const sequelize = new Sequelize('doador', 'root', '525715', {
+const sequelize = new Sequelize('sistemadedoacao', 'root', '525715', {
   host: 'localhost',
   dialect: 'mysql'
 });
