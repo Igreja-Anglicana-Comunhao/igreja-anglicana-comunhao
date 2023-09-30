@@ -12,5 +12,5 @@ const Doar = db.sequelize.define('Doador', {
     }
 });
 
-Doar.sync({force: true})
+//Doar.sync({force: true})
 module.exports = Doar;
