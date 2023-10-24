@@ -1,0 +1,9 @@
+<h1>Lista de doadores:</h1>
+
+<ul>
+  <% for(let i = 0; i < doar.length; i++) { %>
+    <li><%= doar[i].Nome %> : <%= doar[i].Doacao  %>
+      <a href="/deletar/<%= doar[i].id %>"><button>Deletar</button></a>
+    </li>
+  <% } %>
+</ul>
