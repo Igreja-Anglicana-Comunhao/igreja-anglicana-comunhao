@@ -14,34 +14,57 @@
 
 <body>
     <!-- NAVBAR -->
-    <ul class="nav justify-content-end">
-        <a class="navbar-brand" href="index.html">
-            <img class="img-responsive pull-left" src="img/01T.png" width="175px" height="55px">
-        </a>
-        <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://catedralcomunhao.com">A Catedral</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projetos</a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Projeto Compaixão</a></li>
-                <li><a class="dropdown-item" href="#">Comunhão nas Ruas</a></li>
-                <li><a class="dropdown-item" href="#">Comunhão nos Presídios</a></li>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/01T.png" alt="Avatar Logo" style="width:160px" class="rounded-pill">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://catedralcomunhao.com">Catedral</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Projetos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Projeto Compaixão</a></li>
+                        <li><a class="dropdown-item" href="#">Comunhão nas Ruas</a></li>
+                        <li><a class="dropdown-item" href="#">Comunhão nos Presídios</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Doação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
             </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link">Doação</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link">Login</a>
-        </li>
-    </ul>
+        </div>
+    </nav>
 
     <!-- HOME -->
-    <img src="img/03.jpeg" width="auto" height="auto" alt/>
+    <img src="img/03.jpeg" class="img-fluid">
+
+    <!-- QUEM SOMOS? -->
+    <section>
+        <!-- ICONE DA CATEDRAL -->
+    </section>
+    <p class="text-center fs-2 text-dark">QUEM SOMOS?</p>
+    
+    <!-- <div class="container">
+        <p class="">Em 1999, o Postulante Márcio Meira aceitou o desafio de Deus de abrir uma frente evangelizadora no litoral da capital da Paraíba. Com a autorização do Bispo Robinson Cavalcanti, nasceu o Ponto Missionário Anglicano Comunhão. Ao longo dos anos, a comunidade cresceu e se estabeleceu na Rua Fernando Honorato Pereira, 154, Bessa, onde se tornou uma Paróquia vibrante dirigida em Células.</p>
+
+        <p class="">Em 2017, Márcio Meira foi sagrado Bispo Regional, e em 2018, a comunidade se tornou uma Diocese em João Pessoa, abrangendo várias regiões do Brasil. A antiga Paróquia Anglicana se tornou a Catedral Anglicana Comunhão com suas extensões e igrejas filhas.</p>
+
+        <p>Em 2022, receberam uma palavra profética de expansão e iniciaram uma campanha para adquirir terrenos e construir um novo e grande templo. Acredita-se que esta é apenas o início de uma história escrita por Deus e que a obra continuará a se expandir no Reino de Deus.</p>
+    </div> -->
 
     <!-- CAROUSEL -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -62,7 +85,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/01.jpeg"d-block w-100" alt="...">
+                <img src="img/01.jpeg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Comunhão nas Ruas</h5>
                     <p>Projeto Social que ajuda os moradores de rua com alimento e produtos de higiene pessoal.</p>
@@ -87,10 +110,13 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 
 </body>
-<script>
-
-</script>
 
 </html>
