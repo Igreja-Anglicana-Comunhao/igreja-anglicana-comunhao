@@ -19,16 +19,6 @@ services:
     networks:
       - dev-network
   #===================================================
-  # SERVER front
-  #===================================================
-  frontend:
-    image: projigreja/nginx
-    container_name: nginx
-    ports: 
-      - 8080:80
-    networks:
-      - dev-network
-  #===================================================
   # SERVER PHPMYADMIN
   #===================================================
 

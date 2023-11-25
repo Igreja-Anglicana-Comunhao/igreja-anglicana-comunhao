@@ -1,78 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunhão Doações</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="https://catedralcomunhao.com/wp-content/uploads/2022/03/cropped-logo-comunhao-4-32x32.png"
-        sizes="32x32">
-    <style>
-        body {
-            background-image: url(/front/img/03.jpeg);
-            background-repeat: no-repeat;
-        }
-
-        .carousel-item {
-            margin-top: 100vh;
-        }
-
-        .home-info {
-            margin-top: 10px;
-
-        }
-
-        .red {
-            margin-top: 650px;
-        }
-
-        .verse01 {
-            font-size: 30px;
-            margin-top: 150px;
-        }
-
-        .verse02 {
-            font-size: 17px;
-            justify-content: space-evenly;
-        }
-
-        .scroll-to-top {
-            display: none;
-            position: fixed;
-            bottom: 15px;
-            right: 15px;
-            z-index: 99;
-            width: 50px;
-            height: 50px;
-            background-image: url("img/up.png");
-            background-color: transparent;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border: none;
-            border-radius: 20%;
-            cursor: pointer;
-        }
-    </style>
+    <title>Comunhão Doações</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
 </head>
 
-<body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <div class="container-fluid">
+<body class="main-bg">
+    <!--   <<<<<<<<<<<<<<<<     Menu  >>>>>>>>>>>>>>>>>>>>>>>>>  -->
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-white sticky-top">
+        <div class="container-fluid" style="width: 67%;">
             <a class="navbar-brand" href="index.html">
-                <img src="img/01T.png" alt="Avatar Logo" style="width:160px" class="rounded-pill">
+                <img src="assets/img/01T.png" alt="Avatar Logo" style="width:160px" class="rounded-pill">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://catedralcomunhao.com">Catedral</a>
+                    <a class="nav-link active" aria-current="page" href="#quemsomos">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://catedralcomunhao.com">A Catedral</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -86,102 +43,120 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Doação</a>
+                    <a class="nav-link" href="#form">Doação</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="assets/pages/autenticao.html">Login</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <!--   <<<<<<<<<<<<<<<<     Fim Menu     >>>>>>>>>>>>>>>>>>>>>>>>>  -->
 
-    <!-- HOME -->
+    <!--   <<<<<<<<<<<<<<<<     Home     >>>>>>>>>>>>>>>>>>>>>>>>>  -->
 
-
-    <header>
-        <div class="home">
-            <div class="row" style="width: 100%;">
-                <div class="col-lg-12">
-                    <div class="home-info">
-                        <center>
-                            <div>
-                                <div class="verse01">
-                                    <p>"Porque, se vivemos, é para o Senhor que <br> vivemos; se morremos, é para o
-                                        Senhor que <br> morremos. Quer, pois, vivamos ou morremos, <br> somos do Senhor"
-                                        (Ro 14:8)
-                                    </p>
-                                </div>
-                            </div>
+    <section id="home" class="section verse01">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="">
+                        <div>
+                            <span>"Porque, se vivemos, é para o Senhor que <br> vivemos; se morremos, é para o
+                                Senhor que <br> morremos. Quer, pois, vivamos ou morremos, <br> somos do Senhor"
+                                (Ro 14:8).
+                            </span>
+                        </div>
                     </div>
                 </div>
-                </center>
+
             </div>
         </div>
-        </div>
-    </header>
-    <!-- QUEM SOMOS? -->
-    <section>
-        <center>
+
+    </section>
+    <!--   <<<<<<<<<<<<<<<<   Fim Home     >>>>>>>>>>>>>>>>>>>>>>>>>  -->
+
+    <!--   <<<<<<<<<<<<<<<<     quem somes     >>>>>>>>>>>>>>>>>>>>>>>>>  -->
+
+    <section id="quemsomos" class="section intro-text-content">
+        <div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="red">
-                            <img src="img/02RED.png" width="275px" height="200px">
+                        <div class="intro-title" style="margin-bottom: 1%;">
+                            <img src="assets/img/02RED.png">
+                        </div>
+                        <div class="intro-title" style="margin-bottom: 1%;">
+                            <h1>QUEM SOMOS</h1>
+                        </div>
+                        <div style="padding-left: 5%; padding-right: 5%; margin-bottom: 3%;">
+                            <div style="background-color: #A4A1A157; border-radius: 2%; padding: 3%">
+                                <span class="verse02">
+                                    No ano de 1999 o até então Postulante Márcio Meira com uma ousadia jovem aceitou o
+                                    desafiou que Deus
+                                    havia
+                                    ministrado em seu coração de abrir uma frente evangelizadora no litoral da capital
+                                    da Paraíba. Recebendo
+                                    autorização Episcopal do Bispo Robinson Cavalcanti, no dia 27 de novembro daquele
+                                    mesmo ano, na Escola
+                                    Municipal
+                                    Frei Albino no bairro do Bessa, nasceu o Ponto Missionário Anglicano Comunhão.
+                                    Peregrinamos por escolas, hotéis e alugueis, até que foi adquirido dois terrenos e
+                                    construído um templo
+                                    próprio
+                                    na Rua Fernando Honorato Pereira, 154, Bessa, onde constituímos uma Paróquia
+                                    vibrante dirigida em
+                                    Células e que
+                                    foi crescendo na unção do Espírito Santo ano após ano.
+                                    <br>
+                                    <br>
+                                    Através deste mover em toda Igreja Anglicana na nossa região, em 2017 o então Pastor
+                                    Márcio Meira é
+                                    sagrado
+                                    Bispo Regional e em 2018 nos tornamos Diocese em João Pessoa, um forte conjunto de
+                                    Igrejas na Região PB,
+                                    RN e
+                                    posteriormente no CE, SP, RJ, PA, ES e MG vinculados a nova Província da Igreja
+                                    Anglicana no Brasil. Com
+                                    este
+                                    processo a então Paróquia Anglicana passou a ser a Catedral Anglicana Comunhão com
+                                    suas extensões e
+                                    igrejas
+                                    filhas.
+                                    <br>
+                                    <br>
+                                    Em 2022 recebemos uma palavra profética de expansão e para que isso acontecesse,
+                                    vendemos no templo,
+                                    etramos em
+                                    uma campanha adquirindo vários terrenos para construção do novo e grande templo da
+                                    Catedral Anglicana
+                                    Comunhão.
+                                    Agora em 2023 chegamos à terra prometida, um grande templo com capacidade para 1.500
+                                    lugares, para a
+                                    Glória de
+                                    Deus viveremos a melhor estação.
+                                    Temos acreditado que isto é apenas o início de uma história que já estava sendo
+                                    escrita pelo dedo de
+                                    Deus a
+                                    muitos anos atrás e que seremos continuadores da obra anunciada em atos 28. Cremos
+                                    na grande expansão do
+                                    Reino
+                                    de Deus neste lugar.
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </center>
-    </section>
-    <center>
-        <p class="fs-2 text-dark">QUEM SOMOS</p>
-    </center>
-    <div style="padding-left: 5%; padding-right: 5%;">
-        <div style="background-color: #A4A1A157; border-radius: 2%; padding: 3%">
-            <p class="verse02">
-                No ano de 1999 o até então Postulante Márcio Meira com uma ousadia jovem aceitou o desafiou que Deus
-                havia
-                ministrado em seu coração de abrir uma frente evangelizadora no litoral da capital da Paraíba. Recebendo
-                autorização Episcopal do Bispo Robinson Cavalcanti, no dia 27 de novembro daquele mesmo ano, na Escola
-                Municipal
-                Frei Albino no bairro do Bessa, nasceu o Ponto Missionário Anglicano Comunhão.
-                Peregrinamos por escolas, hotéis e alugueis, até que foi adquirido dois terrenos e construído um templo
-                próprio
-                na Rua Fernando Honorato Pereira, 154, Bessa, onde constituímos uma Paróquia vibrante dirigida em
-                Células e que
-                foi crescendo na unção do Espírito Santo ano após ano.
-                <br>
-                <br>
-                Através deste mover em toda Igreja Anglicana na nossa região, em 2017 o então Pastor Márcio Meira é
-                sagrado
-                Bispo Regional e em 2018 nos tornamos Diocese em João Pessoa, um forte conjunto de Igrejas na Região PB,
-                RN e
-                posteriormente no CE, SP, RJ, PA, ES e MG vinculados a nova Província da Igreja Anglicana no Brasil. Com
-                este
-                processo a então Paróquia Anglicana passou a ser a Catedral Anglicana Comunhão com suas extensões e
-                igrejas
-                filhas.
-                <br>
-                <br>
-                Em 2022 recebemos uma palavra profética de expansão e para que isso acontecesse, vendemos no templo,
-                etramos em
-                uma campanha adquirindo vários terrenos para construção do novo e grande templo da Catedral Anglicana
-                Comunhão.
-                Agora em 2023 chegamos à terra prometida, um grande templo com capacidade para 1.500 lugares, para a
-                Glória de
-                Deus viveremos a melhor estação.
-                Temos acreditado que isto é apenas o início de uma história que já estava sendo escrita pelo dedo de
-                Deus a
-                muitos anos atrás e que seremos continuadores da obra anunciada em atos 28. Cremos na grande expansão do
-                Reino
-                de Deus neste lugar.
-            </p>
         </div>
-    </div>
 
-    <!-- CAROUSEL -->
-    <section style="min-height: 100vh;">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="min-height: 100vh;">
+
+    </section>
+    <!--   <<<<<<<<<<<<<<<<    fim quem somes     >>>>>>>>>>>>>>>>>>>>>>>>>  -->
+
+
+    <!--   <<<<<<<<<<<<<<<<    inicio  Carrossel     >>>>>>>>>>>>>>>>>>>>>>>>>  -->
+    <section id="" class="section">
+        <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -192,26 +167,21 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/04C.jpeg" class="d-block w-100" alt="...">
+                    <img src="assets/img/04C.jpeg" class="d-block w-100" alt="..." height="700">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Projeto Compaixão</h5>
                         <p>Projeto Social que cuida de crianças carentes na Comunidade do Jacaré.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <!-- <iframe height="800"class="d-block w-100" src="https://www.youtube.com/embed/0OkHnn_uNhg?si=yHgEo5l73_pOJvop&amp;start=159" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    <iframe height="700"class="d-block w-100" src="https://www.youtube.com/embed/0OkHnn_uNhg?si=yHgEo5l73_pOJvop&amp;start=159" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Comunhão nas Ruas</h5>
                         <p>Projeto Social que ajuda os moradores de rua com alimentos e itens de higiene pessoal.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <!-- <img src="img/01.jpeg" class="d-block w-100" alt="..."> -->
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Comunhão nos Presídios</h5>
-                        <p>Projeto Social que propõe a evangelização e apoio nos presídios.</p>
-                    </div>
-                </div>
+                
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
@@ -225,38 +195,121 @@
             </button>
         </div>
     </section>
+    <!--   <<<<<<<<<<<<<<<<    Fim  Carrossel     >>>>>>>>>>>>>>>>>>>>>>>>>  -->
 
-    <!-- FORM -->
-    <section>
+    </section id="form" class="section" >
+    <div class="menu-spacing"></div>
+    <div class="container  form-container" style="margin-bottom: 4%">
+        <div class="donation-title">
+            <h1>Doações</h1>
+        </div>
+        <div class="row">
+            <div class="col-md" style="min-height: 50vh;">
+                <div style="color: #000; justify-content: center; align-items: center; display: flex;">
+
+                    <span > Faça sua contribuição <br> "Pois Deus ama quem dá com alegria." (2 Co 9:7) </span>
+                </div>
+            </div>
+            <div class="col-md" style="margin-top: 5%;">
+                <form id="meuformulario" class="row g-5 needs-validation" novalidate style="color: #000;">
+                    <div class="col-md-6">
+                        <label for="validationCustom01" class="form-label">Seu nome</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleFormControlInput1" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleFormControlInput1" class="form-label">Valor da doação</label>
+                        <input type="email" class="form-control" id="valordoacao" placeholder="">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="test" class="form-label">Projetos</label>
+                        <select class="form-select" name="test" id="test" aria-label="Default select example">
+                            <option selected>Selecione o projeto</option>
+                            <option value="Projeto Compaixão">Projeto Compaixão</option>
+                            <option value="Comunhão nas Ruas">Comunhão nas Ruas</option>
+                            <option value="Comunhão nos Presídios">Comunhão nos Presídios</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Aceito os termos e condições
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-dark" type="submit" value="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     </section>
-
-    <button id="btnScrollToTop" class="scroll-to-top" src="img/up.png"></button>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    <section class="footer " >
+        <div class="infos">
+            <img src="assets/img/01T.png" alt="" height="150" width="400">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="https://www.google.com/maps/place/R.+Andr%C3%A9+Dias+-+Aeroclube,+Jo%C3%A3o+Pessoa+-+PB,+58036-235/data=!4m2!3m1!1s0x7acdd99e68bda01:0xd21a8bd29e07912f?sa=X&ved=2ahUKEwiMj-X069qCAxU7rZUCHSOCD3QQ8gF6BAgKEAA">Rua André Dias, S/N - Aeroclube Bessa - João Pessoa PB - CEP: 58036-235</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="">+55 (83)  9.8886.4559</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="">anglicanacomunhaopb@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/catedralcomunhao/">catedralcomunhao</a>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+    <script src="https://kit.fontawesome.com/339f493d54.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
-        const btnScrollToTop = document.getElementById("btnScrollToTop");
-
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
-                btnScrollToTop.style.display = "block";
-            } else {
-                btnScrollToTop.style.display = "none";
+        document.getElementById('meuformulario').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const nome = document.getElementById('name').value;
+            const telefone = document.getElementById('telefone').value;
+            const email = document.getElementById('email').value;
+            const valor = document.getElementById('valordoacao').value;
+            const projeto = document.getElementById('test').value;
+            const obj = {
+                nome,
+                email,
+                valor,
+                telefone,
+                projeto
             }
-        });
-
-        btnScrollToTop.addEventListener("click", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+            console.log(obj);
+            inserirMensagem(obj);
         });
     </script>
-
 </body>
+
 
 </html>
