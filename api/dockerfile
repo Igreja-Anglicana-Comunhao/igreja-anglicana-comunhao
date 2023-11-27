@@ -1,0 +1,21 @@
+FROM node:latest
+
+WORKDIR /usr/src/app
+
+COPY ../api /usr/src/app/
+
+ENV DOCKERIZE_VERSION v0.7.0
+
+RUN apt-get update \
+    && apt-get install -y wget \
+    && wget -O - https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz | tar xzf - -C /usr/local/bin \
+    && apt-get autoremove -yqq --purge wget && rm -rf /var/lib/apt/lists/*
+#COPY . /usr/src/app
+
+EXPOSE 3001
+
+#CMD [ "npx","sequelize-cli db:migrate" ]
+
+#CMD [ "npx","sequelize-cli db:seed:all" ]
+
+#CMD [ "npm","run","dev" ]

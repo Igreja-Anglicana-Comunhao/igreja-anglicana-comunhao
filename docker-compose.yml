@@ -22,12 +22,28 @@ services:
   # SERVER front
   #===================================================
   frontend:
-    image: projigreja/nginx
+    image: nginx:latest
     container_name: nginx
     ports: 
       - 8080:80
+    volumes:
+      - ./front:/usr/share/nginx/html
     networks:
       - dev-network
+  #===================================================
+  # SERVER api
+  #===================================================
+  #api:
+  #  image: projigreja/api
+  #  container_name: api
+  #  entrypoint: dockerize -wait tcp://db:3306 -timeout 30s docker-entrypoint.sh
+  #  volumes:
+  #    - ./api:/usr/src/app
+  #  tty: true
+  #  networks:
+  #    - dev-network
+  #  depends_on:
+  #    - db
   #===================================================
   # SERVER PHPMYADMIN
   #===================================================

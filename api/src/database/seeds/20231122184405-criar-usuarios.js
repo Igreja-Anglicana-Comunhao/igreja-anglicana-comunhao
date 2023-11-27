@@ -5,9 +5,9 @@ module.exports = {
     await queryInterface.bulkInsert(
       'users',
       [{
-        nome: 'jaao',
-        email: 'jaaosde@gmail.com',
-        password_hash: await bcryptjs.hash('123456', 8),
+        nome: 'Administrador',
+        email: 'Adm@igrejaanglicanacomunhao.com',
+        password_hash: await bcryptjs.hash('Wx8~)82+O!ZjkA?', 8),
       }],
       {},
     );
